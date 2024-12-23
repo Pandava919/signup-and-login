@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.signUp {
+    width: 30vw;
+    margin: 100px auto;
+    /* background-color: greenyellow; */
+    border-radius: 10px;
+}
+
+.signUp h1 {
+    text-align: center;
+    width: 100%;
+    background-color: rgb(174, 205, 128);
+    box-shadow: 0px 0px 6px rgba(80, 100, 50, 0.685);
+    padding: 5px 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.signUp form {
+    border: 1px solid rgb(174, 205, 128);
+    background-color: rgb(174, 205, 128);
+    border-top: none;
+    box-shadow: 2px 0px 10px rgba(80, 100, 50, 0.685);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-color: whitesmoke;
+    /* border-radius: 0px 0px 10px 10px; */
+    border-radius: 10px;
+
+}
+
+.signUp form input {
+    width: 90%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+.signUp form button {
+    margin: 15px;
+    background-color: green;
+    padding: 10px 20px;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+}
+
+.signUp form button:hover {
+    background-color: rgba(0, 128, 0, 0.815);
+    cursor: pointer;
+}
+
+.signUp #msg {
+    width: 100%;
+    background-color: rgb(251 106 106 / 58%);;
+    height: 30px; 
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 12px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    display: none;
+}
