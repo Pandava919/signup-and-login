@@ -32,7 +32,6 @@
     background-color: whitesmoke;
     /* border-radius: 0px 0px 10px 10px; */
     border-radius: 10px;
-
 }
 
 .signUp form input {
@@ -56,6 +55,14 @@
 .signUp form button:hover {
     background-color: rgba(0, 128, 0, 0.815);
     cursor: pointer;
+}
+
+.signUp form span{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.signUp form span a{
+    font-weight: 700;
 }
 
 .signUp #msg {
