@@ -57,25 +57,75 @@
     cursor: pointer;
 }
 
-.signUp form span{
+.signUp form span {
     font-size: 15px;
     margin-bottom: 10px;
 }
-.signUp form span a{
+
+.signUp form span a {
     font-weight: 700;
 }
 
 .signUp #msg {
     width: 100%;
-    background-color: rgb(251 106 106 / 58%);;
-    height: 30px; 
+    background-color: rgb(251 106 106 / 58%);
+    height: 30px;
     border-radius: 10px;
     color: white;
     text-align: center;
     padding: 8px;
     font-size: 12px;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
     display: none;
+}
+
+/* Responsiveness for Tablets */
+@media screen and (max-width: 768px) {
+    .signUp {
+        width: 50vw; 
+    }
+
+    .signUp h1 {
+        font-size: 20px; 
+    }
+
+    .signUp form input {
+        padding: 8px; 
+    }
+
+    .signUp form button {
+        padding: 8px 16px; 
+    }
+
+    .signUp form span {
+        font-size: 14px; 
+    }
+}
+
+/* Responsiveness for Mobile */
+@media screen and (max-width: 480px) {
+    .signUp {
+        width: 80vw; 
+        margin: 50px auto;
+    }
+
+    .signUp h1 {
+        font-size: 18px; 
+    }
+
+    .signUp form input {
+        padding: 6px; 
+    }
+
+    .signUp form button {
+        padding: 6px 12px; 
+        font-size: 14px;
+    }
+
+    .signUp form span {
+        font-size: 12px; 
+    }
+
+    .signUp #msg {
+        font-size: 10px; 
+    }
 }
