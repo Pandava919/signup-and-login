@@ -19,20 +19,20 @@ function signUp(e) {        //signup function
         msg.innerText = "Password and Confirm Password must be same";
         return false
     }
-    if (JSON.parse(localStorage.getItem("students"))?.some((s) => s.email === email)) {  // new user validation
+    if (JSON.parse(localStorage.getItem("users"))?.some((s) => s.email === email)) {  // new user validation
         msg.style.display = "block";
         msg.innerText = "user already present";
         return false
     }
 
-    let student = { fn, ln, phn, email, pw, cpw };
-    let studentsStored = localStorage.getItem('students')   // getting data from local storage
-    let students = []
-    if (studentsStored) {       // checking local storage data is empty or not
-        students = JSON.parse(studentsStored);
+    let user = { fn, ln, phn, email, pw, cpw };
+    let usersStored = localStorage.getItem('users')   // getting data from local storage
+    let users = []
+    if (usersStored) {       // checking local storage data is empty or not
+        users = JSON.parse(usersStored);
     }
-    students.push(student)
-    localStorage.setItem("students", JSON.stringify(students))  // storing data in local storage
+    users.push(user)
+    localStorage.setItem("users", JSON.stringify(users))  // storing data in local storage
     return true
 }
 
@@ -50,7 +50,7 @@ function logIn(e) {     //login function
         msg.innerText = "All fields are mandatory"
         return false
     }
-    const userPresent = JSON.parse(localStorage.getItem("students"))?.find((s) => (s.email === email.value) && (s.pw === password.value))
+    const userPresent = JSON.parse(localStorage.getItem("users"))?.find((s) => (s.email === email.value) && (s.pw === password.value))
     if (!userPresent) {   // credentials(email/mobie and password) validation
         msg.style.display = "block"
         msg.innerText = "wrong credentials"
