@@ -51,12 +51,12 @@ function logIn(e) {     //login function
         return false
     }
     const userPresent = JSON.parse(localStorage.getItem("users"))?.find((s) => (s.email === email.value) && (s.pw === password.value))
-    if (!userPresent) {   // credentials(email/mobie and password) validation
+    if (!userPresent) {   // credentials(email and password) validation
         msg.style.display = "block"
         msg.innerText = "wrong credentials"
         return false
     } else if (userPresent) {
-        alert(`${userPresent?.fn + userPresent?.ln} login successfully`)
+        alert(`${userPresent?.fn + ' ' + userPresent?.ln} login successfully`)
         return true
     }
 
